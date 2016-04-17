@@ -13,7 +13,7 @@ document.body.onmousemove = function(e){
 	var y = pageY/window.innerHeight;
 
 	function mouseSetUp(mouse, a){
-		mouse.innerHTML = Math.ceil(100*a) + "%";
+		mouse.textContent = Math.ceil(100*a) + "%";
 		mouse.style.opacity = 1 - x;
 	}
 

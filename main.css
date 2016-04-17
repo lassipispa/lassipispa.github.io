@@ -1,20 +1,17 @@
-html{
+		html, body {
+			background: #1D181F;
 			font-family: 'Roboto', sans-serif;
 			color: #306E73;
 			height: 100%;
 			width: 100%;
+			margin: 0;
 
 		}
-		body{
-			background: #1D181F;
-			opacity: 1;
-			margin: 0;
-			height: 100%;
-			width: 100%;
+		body {
 			z-index: -1;
 		}
-		h1{
-			font-size: 5em;
+		h1 {
+			font-size: 7em;
 			opacity: 1;
 			position: fixed;
 			margin: 0 2%;
@@ -25,7 +22,7 @@ html{
 			border-bottom-style: solid;
 			border-bottom-color: #306E73; 
 		}
-		#block{
+		#block {
 			font-size: 80px;
 			font-weight: bold;
 			color: #962D3E;
@@ -33,4 +30,13 @@ html{
 			height: 100%;
 			float: top;
 			text-align: center;
+		}
+		#circleX, #circleY {
+			stroke-dasharray: 20;
+			animation: dash 60s linear;
+		}
+		@keyframes dash {
+  			to {
+  			  stroke-dashoffset: 2000;
+  			}
 		}

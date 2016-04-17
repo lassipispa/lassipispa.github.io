@@ -32,7 +32,8 @@
 			text-align: center;
 		}
 		#circleX, #circleY {
-			stroke-dasharray: 20;
+			stroke-dasharray: 50;
+			stroke-linecap: round;
 			animation: dash 60s linear;
 		}
 		@keyframes dash {

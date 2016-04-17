@@ -18,6 +18,7 @@ document.body.onmousemove = function(e){
 	}
 
 	function circleSetUp(circle, a) {
+		a = Math.tan(a);
 		circle.style.opacity = 0 + a;
 		circle.setAttribute("r", Math.ceil(300*a*2));
 		circle.setAttribute("stroke-width",50*a);

@@ -51,9 +51,19 @@
 		#footer {
 			position:fixed;
 			background: #2D323B;
-			height: 20px;
 			width: 100%;
+			height: 20px;
     		bottom:0;
+    		animation: peek 2s ease-in;
+		}
+
+		@keyframes peek {
+			from {
+    			height: 150px;
+  			}
+			to {
+   				height: 20px;
+  			}
 		}
 
 		#links {

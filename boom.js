@@ -24,6 +24,20 @@ document.body.onmousemove = function(e){
 		circle.setAttribute("stroke-width",50*a);
 	}
 
+	function footerSetUp(footer, y){
+	if(y > 0.95){
+		footer.style.height = "150px";
+
+	} else if(footer.style.height == "150px" && y > 0.8){
+		footer.style.height = "150px";
+
+	} else{
+		footer.style.height = "20px";
+	}
+	}
+
+	footerSetUp(document.getElementById("footer"), y);
+
 	mouseSetUp(document.getElementById('mouseX'), x);
 	mouseSetUp(document.getElementById('mouseY'), y);
 
